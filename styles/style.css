@@ -9,13 +9,20 @@ body {
 
     gap: 2rem;
     flex-wrap: wrap;
+    min-height: 95vh;
 
     background-image: url("etchASketchBackground.webp");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
+    background-size: cover;
 }
+
+/* 
+Textboxes 
+*/
+
 .textbox, #pixelGrid, #settings {
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: #ffffffd0;
     padding: 2rem 1.3rem;
 
     border-style: solid;
@@ -33,18 +40,36 @@ body {
     flex-wrap: wrap;
     gap: 1rem;
 }
-h1 {
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* 
+Text Formatting
+*/
+
+h1, h3 {
     margin: 0;
 }
+
 button, input {
     border-style: solid;
     border-width: 0.15rem;
     border-radius: 0.3rem;
     
-    background-color: rgb(232,244,140);
+    background-color: #58ff80;
 
     padding: 0.3rem 0.5rem;
 }
+
+/*
+Pixel Canvas
+*/
 
 #pixelGrid {
     height: 10rem;
@@ -61,8 +86,8 @@ button, input {
     margin: 0;
     padding: 0;
 
-    background-color: rgba(232,244,140,0.3);
+    background-color: #58ff80;
 }
 .drawnPixel {
-    background-color: rgba(100,140,17,0.6);
+    background-color: #007647;
 }
